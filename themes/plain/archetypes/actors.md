@@ -1,6 +1,6 @@
 ---
 actorId: {{ replace .Name "-" " " }}
-Name: 
+Title: 
 Nationality:
 Birth:
 Height:

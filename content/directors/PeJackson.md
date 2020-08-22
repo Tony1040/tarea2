@@ -1,6 +1,6 @@
 ---
 directorId: PeJackson
-Name: Peter Jackson
+Title: Peter Jackson
 Nationality: Neozelandés
 Birth: 31 October 1987
 Height: 1,69 m

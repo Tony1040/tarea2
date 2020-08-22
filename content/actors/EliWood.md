@@ -1,6 +1,6 @@
 ---
 actorId: EliWood
-Name: Elijah Wood
+Title: Elijah Wood
 Nationality: United states
 Birth: 28 January 1981
 Height: 1.68 cm

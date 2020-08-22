@@ -10,11 +10,11 @@
 <tr><td><b>Rate</b><td><td>{{ .Params.Rate}}</td></tr>
 <tr><td><b>Actors</b></td><td>
   {{ $t := $.Site.GetPage .Params.actorsId}}
-    <a href="/actors/{{ .Params.actorId}}">{{ $t.Name }}</a>
+    <a href="/actors/{{ .Params.actorId}}">{{ $t.Title }}</a>
 </td></tr>
 <tr><td><b>Director</b></td><td>
   {{ $t := $.Site.GetPage .Params.directorId}}
-    <a href="/directors/{{ .Params.directorId}}">{{ $t.Name }}</a>
+    <a href="/directors/{{ .Params.directorId}}">{{ $t.Title }}</a>
 </td></tr>
 </table>
 
