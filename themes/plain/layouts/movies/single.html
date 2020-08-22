@@ -1,0 +1,24 @@
+{{ define "main" }}
+<h5>{{ .Title }}</h5>
+
+<h6>Movie's details</h6>
+<table>
+<tr><td><b>ID</b><td><td>{{ .Params.movieId}}</td></tr>
+<tr><td><b>Title</b><td><td>{{ .Params.Title}}</td></tr>
+<tr><td><b>Publish</b><td><td>{{ .Params.Publish}}</td></tr>
+<tr><td><b>Language</b><td><td>{{ .Params.language}}</td></tr>
+<tr><td><b>Rate</b><td><td>{{ .Params.Rate}}</td></tr>
+<tr><td><b>Actors</b></td><td>
+  {{ $t := $.Site.GetPage .Params.actorsId}}
+    <a href="/actors/{{ .Params.actorId}}">{{ $t.Name }}</a>
+</td></tr>
+<tr><td><b>Director</b></td><td>
+  {{ $t := $.Site.GetPage .Params.directorId}}
+    <a href="/directors/{{ .Params.directorId}}">{{ $t.Name }}</a>
+</td></tr>
+</table>
+
+<h6>Description</h6>
+
+{{ .Content }}
+{{ end }}
