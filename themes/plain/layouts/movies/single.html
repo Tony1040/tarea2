@@ -9,8 +9,12 @@
 <tr><td><b>Language</b><td><td>{{ .Params.language}}</td></tr>
 <tr><td><b>Rate</b><td><td>{{ .Params.Rate}}</td></tr>
 <tr><td><b>Actors</b></td><td>
-  {{ $t := $.Site.GetPage .Params.actorsId}}
-    <a href="/actors/{{ .Params.actorId}}">{{ $t.Title }}</a>
+  <ul>
+      {{ range .Params.actorsId }}
+         {{ $t := $.Site.GetPage .}}
+         <li><a href="/actors/{{ .}}">{{ $t.Title }}</a></li>
+      {{ end }}
+    </ul>
 </td></tr>
 <tr><td><b>Director</b></td><td>
   {{ $t := $.Site.GetPage .Params.directorId}}

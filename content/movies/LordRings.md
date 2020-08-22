@@ -4,7 +4,7 @@ Title: Lord of the Rings 1
 Publish: 2001
 Language: ENGLISH
 Rate: 8.8/10
-actorsId: eliwood
+actorsId: [eliwood]
 directorId: pejackson
 ---
 
