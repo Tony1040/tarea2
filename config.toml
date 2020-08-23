@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://arqui-inf-tar2.netlify.app"
 languageCode = "en-us"
 title = "Películas"
 theme = "plain"
