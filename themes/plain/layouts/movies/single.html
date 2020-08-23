@@ -4,11 +4,11 @@
 <h6>Movie's details</h6>
 <table>
 <tr><td><b>ID</b><td><td>{{ .Params.movieId}}</td></tr>
-<tr><td><b>Title</b><td><td>{{ .Params.Title}}</td></tr>
-<tr><td><b>Publish</b><td><td>{{ .Params.Publish}}</td></tr>
-<tr><td><b>Language</b><td><td>{{ .Params.language}}</td></tr>
-<tr><td><b>Rate</b><td><td>{{ .Params.Rate}}</td></tr>
-<tr><td><b>Actors</b></td><td>
+<tr><td><b>Títutlo</b><td><td>{{ .Params.Title}}</td></tr>
+<tr><td><b>Publicación</b><td><td>{{ .Params.Publish}}</td></tr>
+<tr><td><b>Lenguaje</b><td><td>{{ .Params.language}}</td></tr>
+<tr><td><b>Calificación</b><td><td>{{ .Params.Rate}}</td></tr>
+<tr><td><b>Actores</b></td><td>
   <ul>
       {{ range .Params.actorsId }}
          {{ $t := $.Site.GetPage .}}
@@ -22,7 +22,7 @@
 </td></tr>
 </table>
 
-<h6>Description</h6>
+<h3>Descripción</h3>
 
 {{ .Content }}
 {{ end }}

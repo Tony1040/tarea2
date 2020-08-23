@@ -4,15 +4,15 @@
 <h6>Actor's details</h6>
 <table>
 <tr><td><b>ID</b><td><td>{{ .Params.directorId}}</td></tr>
-<tr><td><b>Name</b><td><td>{{ .Params.Title}}</td></tr>
-<tr><td><b>Nationality</b><td><td>{{ .Params.Nationality}}</td></tr>
-<tr><td><b>Birth</b><td><td>{{ .Params.Birth}}</td></tr>
-<tr><td><b>Height</b><td><td>{{ .Params.Height}}</td></tr>
+<tr><td><b>Nombre</b><td><td>{{ .Params.Title}}</td></tr>
+<tr><td><b>Nacionalidad</b><td><td>{{ .Params.Nationality}}</td></tr>
+<tr><td><b>Fecha de nacimiento</b><td><td>{{ .Params.Birth}}</td></tr>
+<tr><td><b>Estatura</b><td><td>{{ .Params.Height}}</td></tr>
 
 </td></tr>
 </table>
 
-<h6>Movies</H6>
+<h3>Películas</H3>
     <ul>
       {{ range .Params.moviesId }}
          {{ $t := $.Site.GetPage .}}
@@ -20,7 +20,7 @@
       {{ end }}
     </ul>
 
-<h6>Biography</h6>
+<h3>Biografía</h3>
 
 {{ .Content }}
 {{ end }}

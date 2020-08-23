@@ -4,6 +4,6 @@ title: Home Page
 
 This website offers information on Movies, actors and directors
 
-* [Movies information](/movies)
-* [Actors information](/actors)
-* [Directors information](/directors)
+* [Información de películas](/movies)
+* [Información de actores](/actors)
+* [Información de directores](/directors)
